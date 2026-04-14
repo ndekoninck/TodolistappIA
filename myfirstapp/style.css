@@ -3,6 +3,12 @@ body {
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+  background-color: #f0f0f0;
+  background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 input {
@@ -20,7 +26,7 @@ li {
 }
 
 .remove-btn {
-  background-color: red;
+  background-color: rgb(227, 94, 94);
   color: white;
   border: none;
   padding: 5px 10px;
@@ -30,4 +36,16 @@ li {
 
 .remove-btn:hover {
   background-color: darkred;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input {
+  flex: 1;
+  min-width: 180px;
 }

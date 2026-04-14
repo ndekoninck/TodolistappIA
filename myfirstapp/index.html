@@ -7,11 +7,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ma todo app</h1>
-  <input id="taskInput" type="text" placeholder="Nouvelle tâche">
-  <button id="addButton">Ajouter</button>
+  <div class="controls">
+    <input id="taskInput" type="text" placeholder="Nouvelle tâche">
+    <button id="addButton">Ajouter</button>
+    <button id="exportButton">Exporter en Excel</button>
+  </div>
   <ul id="taskList"></ul>
 
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>
