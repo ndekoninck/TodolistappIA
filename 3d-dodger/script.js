@@ -1029,6 +1029,7 @@ function drawFinishLineHint() {
     return;
   }
 
+  
   const progress = Math.min(distanceTravelled / levelDistanceTarget, 1);
   const barWidth = Math.min(420, canvas.width * 0.55);
   const x = (canvas.width - barWidth) / 2;
