@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Dodger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="overlay" class="overlay">
+    <div class="overlay-topbar">
+      <h1>3D Dodger</h1>
+      <button id="toggleOverlayButton" type="button" aria-expanded="true">Replier</button>
+    </div>
+    <div id="overlayBody" class="overlay-body">
+    <p>Deplace-toi avec les fleches gauche/droite ou A/D.</p>
+    <div class="hud">
+      <span>Score: <strong id="score">0</strong></span>
+      <span>Niveau: <strong id="level">1</strong></span>
+      <span>Distance: <strong id="distance">0 / 1200</strong></span>
+      <span>Coins: <strong id="coins">0</strong></span>
+      <span>Vitesse: <strong id="speed">1.0x</strong></span>
+      <button id="shopButton">Boutique</button>
+      <button id="startButton">Demarrer</button>
+    </div>
+    <div class="mode-menu">
+      <div class="shop-row">
+        <label for="modeSelect">Mode:</label>
+        <select id="modeSelect">
+          <option value="solo">Solo</option>
+          <option value="2p">2 Joueurs</option>
+          <option value="3p">3 Joueurs</option>
+          <option value="4p">4 Joueurs</option>
+        </select>
+      </div>
+      <div id="playerSetup"></div>
+    </div>
+    <p id="message">Appuie sur Demarrer pour lancer une partie.</p>
+    </div>
+  </div>
+
+  <div id="shopPanel" class="shop-panel hidden" aria-hidden="true">
+    <div class="shop-card">
+      <h2>Boutique Skins</h2>
+      <p id="shopCoins">Coins: 0</p>
+      <div class="shop-row">
+        <label for="skinSelect">Skin:</label>
+        <select id="skinSelect"></select>
+      </div>
+      <div class="skin-preview-wrap">
+        <canvas id="shopSkinPreview" width="120" height="120" aria-label="Apercu skin"></canvas>
+      </div>
+      <p id="skinDescription"></p>
+      <div class="shop-actions">
+        <button id="buySkinButton">Acheter</button>
+        <button id="equipSkinButton">Equiper</button>
+        <button id="closeShopButton">Fermer</button>
+      </div>
+    </div>
+  </div>
+  <canvas id="gameCanvas" aria-label="Jeu 3D"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

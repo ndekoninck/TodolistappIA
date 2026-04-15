@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Jeu - Cible Rapide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>Cible Rapide</h1>
+    <p>Clique la cible rouge avant la fin du temps.</p>
+
+    <section class="hud">
+      <span>Score: <strong id="score">0</strong></span>
+      <span>Temps: <strong id="time">20</strong>s</span>
+      <button id="startButton">Démarrer</button>
+    </section>
+
+    <section id="board" class="board" aria-label="Zone de jeu">
+      <button id="target" class="target" aria-label="Cible"></button>
+    </section>
+
+    <p id="message" class="message">Appuie sur "Démarrer" pour jouer.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

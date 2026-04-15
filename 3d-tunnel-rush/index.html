@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Tunnel Rush</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <h1>3D Tunnel Rush</h1>
+    <p>Pilote ta fusee et esquive les boules de feu.</p>
+    <div class="hud">
+      <span>Score: <strong id="score">0</strong></span>
+      <span>Vitesse: <strong id="speed">1.0x</strong></span>
+      <button id="startBtn">Demarrer</button>
+    </div>
+    <p class="hint">Controles: Fleches / ZQSD</p>
+    <p id="message">Pret au lancement de la fusee.</p>
+  </div>
+
+  <canvas id="gameCanvas" aria-label="Jeu tunnel 3D"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
